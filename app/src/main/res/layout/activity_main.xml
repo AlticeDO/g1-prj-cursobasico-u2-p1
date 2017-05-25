@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jrosariohdz.rpncalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:maxLines="2"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/textViewEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRes"
+        android:gravity="bottom"
+        android:lines="2"
+        android:maxLines="2"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="20sp"
+        android:layout_below="@+id/textViewEntry"/>
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="20sp"
+        android:layout_below="@+id/textViewEntry"
+        android:layout_toRightOf="@+id/button7"/>
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="20sp"
+        android:layout_below="@+id/textViewEntry"
+        android:layout_toRightOf="@+id/button8"/>
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="20sp"
+        android:layout_below="@+id/button7"/>
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="20sp"
+        android:layout_below="@+id/button8"
+        android:layout_toRightOf="@+id/button4"
+        android:layout_above="@+id/button1" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textSize="20sp"
+        android:layout_below="@+id/button9"
+        android:layout_toRightOf="@+id/button5"/>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20sp"
+        android:layout_below="@+id/button4"/>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="20sp"
+        android:layout_below="@+id/button5"
+        android:layout_toRightOf="@+id/button1"/>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20sp"
+        android:layout_below="@+id/button6"
+        android:layout_toRightOf="@+id/button2"/>
+
+    <Button
+        android:id="@+id/buttonPoint"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="20sp"
+        android:layout_below="@+id/button1"/>
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/button1"/>
+
+    <Button
+        android:id="@+id/buttonSignChange"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+/-"
+        android:textSize="20sp"
+        android:layout_below="@+id/button3"
+        android:layout_toRightOf="@+id/button0"/>
+
+    <Button
+        android:id="@+id/buttonEnter"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonSignChange"
+        android:layout_toRightOf="@+id/button0"
+        android:layout_toEndOf="@+id/button0" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="20sp"
+        android:layout_below="@+id/textViewEntry"
+        android:layout_toRightOf="@+id/button9"/>
+
+    <Button
+        android:id="@+id/buttonMul"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonDiv"
+        android:layout_toRightOf="@+id/button6"/>
+
+    <Button
+        android:id="@+id/buttonSum"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonMul"
+        android:layout_toRightOf="@+id/button3"/>
+
+    <Button
+        android:id="@+id/buttonSub"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        android:layout_below="@+id/buttonSum"
+        android:layout_toRightOf="@+id/buttonSignChange"/>
+
+    <Button
+        android:id="@+id/buttonClear"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/buttonEnter"
+        android:layout_alignBottom="@+id/buttonEnter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonEnter"/>
+
+
+
+</RelativeLayout>
