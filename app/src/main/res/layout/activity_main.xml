@@ -5,208 +5,238 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#424242"
     tools:context="com.example.jrosariohdz.rpncalculator.MainActivity">
-
-    <TextView
-        android:id="@+id/textViewRes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:lines="2"
-        android:maxLines="2"
-        android:textSize="30sp"
-        android:layout_marginBottom="30dp"/>
 
     <TextView
         android:id="@+id/textViewEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewRes"
-        android:gravity="bottom"
+        android:background="#FFFFFF"
+        android:gravity="end"
+        android:textColor="#FF5722"
         android:lines="2"
         android:maxLines="2"
-        android:textSize="30sp" />
+        android:textSize="55sp"
+        android:layout_below="@+id/stackSpinner"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:layout_alignRight="@+id/buttonDiv"
+        android:layout_alignEnd="@+id/buttonDiv" />
 
     <Button
         android:id="@+id/button7"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="7"
-        android:textSize="20sp"
-        android:layout_below="@+id/textViewEntry"/>
+        android:textSize="40sp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignBaseline="@+id/button8"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button8"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="8"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/textViewEntry"
-        android:layout_toRightOf="@+id/button7"/>
+        android:layout_toRightOf="@+id/button7"
+        android:layout_above="@+id/button6" />
 
     <Button
         android:id="@+id/button9"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="9"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/textViewEntry"
-        android:layout_toRightOf="@+id/button8"/>
+        android:layout_toRightOf="@+id/button8"
+        android:layout_above="@+id/buttonMul" />
 
     <Button
         android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4"
-        android:textSize="20sp"
-        android:layout_below="@+id/button7"/>
+        android:textSize="40sp"
+        android:layout_below="@+id/button7"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:layout_above="@+id/button2" />
 
     <Button
         android:id="@+id/button5"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/button8"
         android:layout_toRightOf="@+id/button4"
-        android:layout_above="@+id/button1" />
+        android:layout_above="@+id/button3" />
 
     <Button
         android:id="@+id/button6"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="6"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/button9"
-        android:layout_toRightOf="@+id/button5"/>
+        android:layout_toRightOf="@+id/button5"
+        android:layout_above="@+id/buttonSub" />
 
     <Button
         android:id="@+id/button1"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
-        android:textSize="20sp"
-        android:layout_below="@+id/button4"/>
+        android:textSize="40sp"
+        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
 
     <Button
         android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/button5"
-        android:layout_toRightOf="@+id/button1"/>
+        android:layout_toRightOf="@+id/button1"
+        android:layout_above="@+id/buttonSignChange" />
 
     <Button
         android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/button6"
-        android:layout_toRightOf="@+id/button2"/>
+        android:layout_toRightOf="@+id/button2"
+        android:layout_above="@+id/buttonSum" />
 
     <Button
         android:id="@+id/buttonPoint"
-        style="@style/Widget.AppCompat.Button.Borderless"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button0"
+        android:layout_alignBottom="@+id/button0"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1"
         android:text="."
-        android:textSize="20sp"
-        android:layout_below="@+id/button1"/>
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/button0"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF5722"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/button2"
-        android:layout_toRightOf="@+id/button1"/>
+        android:layout_toRightOf="@+id/button1"
+        android:layout_above="@+id/buttonEnter" />
 
     <Button
         android:id="@+id/buttonSignChange"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#1A237E"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+/-"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/button3"
         android:layout_toRightOf="@+id/button0"/>
 
     <Button
         android:id="@+id/buttonEnter"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#4CAF50"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:text="Enter"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/buttonSignChange"
-        android:layout_toRightOf="@+id/button0"
-        android:layout_toEndOf="@+id/button0" />
+        android:layout_alignRight="@+id/buttonSum"
+        android:layout_alignEnd="@+id/buttonSum" />
 
     <Button
         android:id="@+id/buttonDiv"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#1A237E"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="/"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/textViewEntry"
-        android:layout_toRightOf="@+id/button9"/>
+        android:layout_toRightOf="@+id/button9"
+        android:layout_toEndOf="@+id/button9" />
 
     <Button
         android:id="@+id/buttonMul"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#1A237E"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="*"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:layout_below="@+id/buttonDiv"
         android:layout_toRightOf="@+id/button6"/>
 
     <Button
         android:id="@+id/buttonSum"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#1A237E"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+"
-        android:textSize="20sp"
-        android:layout_below="@+id/buttonMul"
+        android:textSize="40sp"
+        android:layout_below="@+id/buttonSub"
         android:layout_toRightOf="@+id/button3"/>
 
     <Button
         android:id="@+id/buttonSub"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#1A237E"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
-        android:textSize="20sp"
-        android:layout_below="@+id/buttonSum"
+        android:textSize="40sp"
+        android:layout_below="@+id/buttonMul"
         android:layout_toRightOf="@+id/buttonSignChange"/>
 
     <Button
         android:id="@+id/buttonClear"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#03A9F4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CLEAR"
-        android:textSize="20sp"
-        android:layout_alignBaseline="@+id/buttonEnter"
-        android:layout_alignBottom="@+id/buttonEnter"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/buttonEnter"/>
+        android:textSize="40sp"
+        android:layout_toLeftOf="@+id/buttonEnter"
+        android:layout_alignLeft="@+id/buttonPoint"
+        android:layout_alignStart="@+id/buttonPoint"
+        android:layout_alignBottom="@+id/buttonEnter" />
 
+    <Spinner
+        android:id="@+id/stackSpinner"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="40dp"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textViewEntry"
+        android:layout_alignStart="@+id/textViewEntry"
+        android:layout_alignRight="@+id/textViewEntry"
+        android:layout_alignEnd="@+id/textViewEntry" />
 
 
 </RelativeLayout>
